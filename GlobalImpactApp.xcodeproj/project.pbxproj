@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75E4D50A21E79A6300A2B517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4D50921E79A6300A2B517 /* AppDelegate.swift */; };
-		75E4D50C21E79A6300A2B517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4D50B21E79A6300A2B517 /* ViewController.swift */; };
+		75E4D50C21E79A6300A2B517 /* ImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4D50B21E79A6300A2B517 /* ImpactViewController.swift */; };
 		75E4D50F21E79A6300A2B517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E4D50D21E79A6300A2B517 /* Main.storyboard */; };
 		75E4D51121E79A6500A2B517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E4D51021E79A6500A2B517 /* Assets.xcassets */; };
 		75E4D51421E79A6500A2B517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E4D51221E79A6500A2B517 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		75E4D50621E79A6300A2B517 /* GlobalImpactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalImpactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E4D50921E79A6300A2B517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75E4D50B21E79A6300A2B517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75E4D50B21E79A6300A2B517 /* ImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactViewController.swift; sourceTree = "<group>"; };
 		75E4D50E21E79A6300A2B517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75E4D51021E79A6500A2B517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E4D51321E79A6500A2B517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		75E4D50821E79A6300A2B517 /* GlobalImpactApp */ = {
 			isa = PBXGroup;
 			children = (
-				75E4D50921E79A6300A2B517 /* AppDelegate.swift */,
-				75E4D50B21E79A6300A2B517 /* ViewController.swift */,
-				75E4D50D21E79A6300A2B517 /* Main.storyboard */,
-				75E4D51021E79A6500A2B517 /* Assets.xcassets */,
-				75E4D51221E79A6500A2B517 /* LaunchScreen.storyboard */,
-				75E4D51521E79A6500A2B517 /* Info.plist */,
+				75E4D51D21E79A9800A2B517 /* Resources */,
+				75E4D51C21E79A8D00A2B517 /* Controller */,
+				75E4D51B21E79A7900A2B517 /* View */,
 			);
 			path = GlobalImpactApp;
+			sourceTree = "<group>";
+		};
+		75E4D51B21E79A7900A2B517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75E4D50D21E79A6300A2B517 /* Main.storyboard */,
+				75E4D51221E79A6500A2B517 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75E4D51C21E79A8D00A2B517 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75E4D50B21E79A6300A2B517 /* ImpactViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75E4D51D21E79A9800A2B517 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75E4D50921E79A6300A2B517 /* AppDelegate.swift */,
+				75E4D51021E79A6500A2B517 /* Assets.xcassets */,
+				75E4D51521E79A6500A2B517 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E4D50C21E79A6300A2B517 /* ViewController.swift in Sources */,
+				75E4D50C21E79A6300A2B517 /* ImpactViewController.swift in Sources */,
 				75E4D50A21E79A6300A2B517 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GlobalImpactApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GlobalImpactApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GlobalImpactApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GlobalImpactApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
